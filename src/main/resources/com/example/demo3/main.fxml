@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="912.0" prefWidth="1327.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.Controller.Controller">
+   <Pane prefHeight="152.0" prefWidth="1327.0" style="-fx-background-color: #3bd4d4;">
+      <Label fx:id="label" layoutX="418.0" layoutY="39.0" prefHeight="74.0" prefWidth="551.0" text="KIỂM THỬ RESTFUL API">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Label>
+   </Pane>
+   <ComboBox fx:id="listlinkURL" layoutX="151.0" layoutY="223.0" onAction="#SelectLinkURL" prefHeight="74.0" prefWidth="271.0" promptText="                   Select link URL" />
+   <TextArea fx:id="textinput" layoutX="610.0" layoutY="177.0" prefHeight="294.0" prefWidth="694.0" />
+   <TextArea fx:id="textoutput" layoutX="610.0" layoutY="586.0" prefHeight="294.0" prefWidth="694.0" />
+   <Label layoutX="88.0" layoutY="250.0" text="1 -">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Label>
+   <ComboBox fx:id="selectUNIT" accessibleRole="MENU_BUTTON" layoutX="151.0" layoutY="397.0" onAction="#SelectUnitest" prefHeight="74.0" prefWidth="271.0" promptText="                  Select UnitTest" />
+   <Label layoutX="88.0" layoutY="424.0" text="2 -">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Label>
+   <Button fx:id="selectramdomUnittest" layoutX="151.0" layoutY="576.0" mnemonicParsing="false" onAction="#SelectRamdom" prefHeight="74.0" prefWidth="271.0" text="  Select random UnitTest" />
+   <Button fx:id="SelectallUnittest" layoutX="151.0" layoutY="748.0" mnemonicParsing="false" onAction="#SelectAll" prefHeight="74.0" prefWidth="271.0" text=" Select all UnitTest" />
+   <Label layoutX="88.0" layoutY="603.0" text="3 -">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Label>
+   <Label layoutX="88.0" layoutY="775.0" text="4 -">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Label>
+   <Button fx:id="clsI" layoutX="689.0" layoutY="490.0" mnemonicParsing="false" onAction="#clearInput" prefHeight="53.0" prefWidth="109.0" text="Clear Input" />
+   <Button layoutX="1148.0" layoutY="490.0" mnemonicParsing="false" onAction="#clearOutput" prefHeight="53.0" prefWidth="109.0" text="Clear Output" />
+</Pane>

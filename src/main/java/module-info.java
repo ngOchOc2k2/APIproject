@@ -1,0 +1,48 @@
+module com.example.demo {
+    requires javafx.controls;
+    requires javafx.fxml;
+    requires rest.assured;
+    requires poi.ooxml;
+    requires poi;
+    requires org.testng;
+    requires json.simple;
+    requires json.path;
+
+    exports com.example.demo3.TestAPI.LogoutTest;
+    exports com.example.demo3.TestAPI.AcceptMaxBid;
+    exports com.example.demo3.TestAPI.ContactUs;
+    exports com.example.demo3.TestAPI.CreateAuction;
+    exports com.example.demo3.TestAPI.CreateBid;
+    exports com.example.demo3.TestAPI.CreateComment;
+    exports com.example.demo3.TestAPI.CreateItem;
+    exports com.example.demo3.TestAPI.DeleteComment;
+    exports com.example.demo3.TestAPI.EditAccount;
+    exports com.example.demo3.TestAPI.EditAuction;
+    exports com.example.demo3.TestAPI.GetAuction;
+    exports com.example.demo3.TestAPI.GetDetailAuction;
+    exports com.example.demo3.TestAPI.GetListAuction;
+    exports com.example.demo3.TestAPI.GetListAuctionByStatus;
+    exports com.example.demo3.TestAPI.GetListAuctionByType;
+    exports com.example.demo3.TestAPI.GetListAuctionByUser;
+    exports com.example.demo3.TestAPI.GetListBrands;
+    exports com.example.demo3.TestAPI.GetListBid;
+    exports com.example.demo3.TestAPI.GetListCategories;
+    exports com.example.demo3.TestAPI.GetListComment;
+    exports com.example.demo3.TestAPI.GetListLike;
+    exports com.example.demo3.TestAPI.GetNews;
+    exports com.example.demo3.TestAPI.GetNotification;
+    exports com.example.demo3.TestAPI.GetTotalLikeOfAuction;
+    exports com.example.demo3.TestAPI.LikeAuction;
+    exports com.example.demo3.TestAPI.LoginTest;
+    exports com.example.demo3.TestAPI.ReadNotification;
+    exports com.example.demo3.TestAPI.Search;
+    exports com.example.demo3.TestAPI.SignUp;
+    exports com.example.demo3.TestAPI.Slider;
+    exports com.example.demo3.TestAPI.ReadNews;
+    exports com.example.demo3.Data;
+    exports com.example.demo3;
+    exports com.example.demo3.Controller;
+    opens com.example.demo3.Constant to javafx.fxml;
+    opens com.example.demo3 to javafx.fxml;
+    opens com.example.demo3.Controller to javafx.fxml;
+}
