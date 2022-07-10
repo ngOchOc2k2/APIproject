@@ -3,11 +3,11 @@
 <suite name="Failed suite [Command line suite]">
   <test thread-count="5" name="Command line test(failed)">
     <classes>
-      <class name="com.example.demo3.TestAPI.CreateComment.CreateCommentAll">
+      <class name="com.example.demo3.TestAPI.SignUp.Signup">
         <methods>
-          <include name="testAll" invocation-numbers="1 4 5 6"/>
+          <include name="testAll" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.example.demo3.TestAPI.CreateComment.CreateCommentAll -->
+      </class> <!-- com.example.demo3.TestAPI.SignUp.Signup -->
     </classes>
   </test> <!-- Command line test(failed) -->
 </suite> <!-- Failed suite [Command line suite] -->

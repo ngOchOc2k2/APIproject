@@ -23,22 +23,31 @@ public class readNewsRandom {
 		String x = response.prettyPrint();
 		a.append(x);
 		Controller.gettextoutput = a;
-		JsonPath jsonpath = response.jsonPath();
-		int testCode = jsonpath.get("code");
-		String testMessage = jsonpath.getString("message");
 		boolean page_loaded = true;
 		try {
-			Assert.assertTrue(response.getStatusCode() == 200);
+			Assert.assertTrue(response.getStatusCode()==200);
 		} catch (AssertionError e) {
 			page_loaded = false;
-			Controller.gettextoutput.append("Test failed!\n");
+			System.out.println("\nTest failed! Không load được api");
+			Controller.gettextoutput.append("\nTest failed! Không load được api" + '\n');
 			throw e;
 		}
-		if (page_loaded) {
+		if(page_loaded) {
+			JsonPath jsonpath = response.jsonPath();
+			int testCode = jsonpath.get("code");
+			String testMessage = jsonpath.getString("message");
 			try {
-				Assert.assertTrue(testCode == Integer.parseInt(code) && testMessage.equals(message));
+				Assert.assertTrue(testCode==Integer.parseInt(code));
 			} catch (AssertionError e) {
-				Controller.gettextoutput.append("Test failed!\n");
+				System.out.println("\nTest failed!\nExpected code: "+code+"\nActual: "+testCode);
+				Controller.gettextoutput.append("\nTest failed!\nExpected code: "+code+"\nActual: "+testCode + '\n');
+				throw e;
+			}
+			try {
+				Assert.assertTrue(testMessage.equals(message));
+			} catch (AssertionError e) {
+				System.out.println("\nTest failed!\nExpected message: "+message+"\nActual: "+testMessage);
+				Controller.gettextoutput.append("\nTest failed!\nExpected message: "+message+"\nActual: "+testMessage + '\n');
 				throw e;
 			}
 		}

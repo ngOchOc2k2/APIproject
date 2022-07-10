@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Command line test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>6/4/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>9/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Jul 10 08:20:54 ICT 2022</td>
+<td>Started on:</td><td>Sun Jul 10 10:24:00 ICT 2022</td>
 </tr>
-<tr><td>Total time:</td><td>27 seconds (27567 ms)</td>
+<tr><td>Total time:</td><td>16 seconds (16408 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,15 +76,11 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.example.demo3.TestAPI.CreateComment.CreateCommentAll.testAll()'><b>testAll</b><br>Test class: com.example.demo3.TestAPI.CreateComment.CreateCommentAll<br>Parameters: 5, Y, Qua ghe gom, 4, 1000, OK</td>
-<td><div><pre>io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
-	at json.path@5.1.1/io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1002)
-	at json.path@5.1.1/io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:967)
-	at json.path@5.1.1/io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1047)
-	at json.path@5.1.1/io.restassured.path.json.JsonPath.get(JsonPath.java:202)
-	at com.example.demo/com.example.demo3.TestAPI.CreateComment.CreateCommentAll.testAll(CreateCommentAll.java:39)
+<td title='com.example.demo3.TestAPI.SignUp.Signup.testAll()'><b>testAll</b><br>Test class: com.example.demo3.TestAPI.SignUp.Signup<br>Parameters: quangnghia.ns@gmail.com, 123456, 123456, , Pham Quang Nghia, 0989686201, C:\Users\Admin\Postman\files\image.png, 1000, OK</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at com.example.demo/com.example.demo3.TestAPI.SignUp.Signup.testAll(Signup.java:53)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at com.example.demo/com.example.demo3.Controller.Controller.SelectAll(Controller.java:1001)
+	at com.example.demo/com.example.demo3.Controller.Controller.SelectAll(Controller.java:1392)
 	at javafx.fxml@18/com.sun.javafx.fxml.MethodHelper.invoke(MethodHelper.java:84)
 	at javafx.fxml@18/javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1852)
 	at javafx.fxml@18/javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1724)
@@ -133,22 +129,13 @@ function toggleAllBoxes() {
 	at javafx.graphics@18/com.sun.glass.ui.gtk.GtkApplication._runLoop(Native Method)
 	at javafx.graphics@18/com.sun.glass.ui.gtk.GtkApplication.lambda$runLoop$11(GtkApplication.java:316)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading &apos;&lt;&apos;, no possible valid JSON value or punctuation could be recognized.
-	at groovy.json.JsonLexer.nextToken(JsonLexer.java:86)
-	at groovy.json.JsonLexer$nextToken.call(Unknown Source)
-	at json.path@5.1.1/io.restassured.internal.path.json.ConfigurableJsonSlurper.parse(ConfigurableJsonSlurper.groovy:97)
-	at io.restassured.internal.path.json.ConfigurableJsonSlurper$parse.callCurrent(Unknown Source)
-	at json.path@5.1.1/io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.groovy:83)
-	at json.path@5.1.1/io.restassured.path.json.JsonPath$4$1.method(JsonPath.java:965)
-	at json.path@5.1.1/io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1000)
-	... 82 more
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace462242478", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace462242478'><pre>io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
-	at json.path@5.1.1/io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1002)
-	at json.path@5.1.1/io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:967)
-	at json.path@5.1.1/io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1047)
-	at json.path@5.1.1/io.restassured.path.json.JsonPath.get(JsonPath.java:202)
-	at com.example.demo/com.example.demo3.TestAPI.CreateComment.CreateCommentAll.testAll(CreateCommentAll.java:39)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace668480485", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace668480485'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng@7.6.0/org.testng.Assert.fail(Assert.java:110)
+	at org.testng@7.6.0/org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng@7.6.0/org.testng.Assert.assertTrue(Assert.java:56)
+	at org.testng@7.6.0/org.testng.Assert.assertTrue(Assert.java:66)
+	at com.example.demo/com.example.demo3.TestAPI.SignUp.Signup.testAll(Signup.java:53)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.testng@7.6.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -172,7 +159,7 @@ Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while
 	at org.testng@7.6.0/org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
 	at org.testng@7.6.0/org.testng.TestNG.runSuites(TestNG.java:1099)
 	at org.testng@7.6.0/org.testng.TestNG.run(TestNG.java:1067)
-	at com.example.demo/com.example.demo3.Controller.Controller.SelectAll(Controller.java:1001)
+	at com.example.demo/com.example.demo3.Controller.Controller.SelectAll(Controller.java:1392)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at com.sun.javafx.reflect.Trampoline.invoke(MethodUtil.java:77)
@@ -227,510 +214,9 @@ Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while
 	at javafx.graphics@18/com.sun.glass.ui.gtk.GtkApplication._runLoop(Native Method)
 	at javafx.graphics@18/com.sun.glass.ui.gtk.GtkApplication.lambda$runLoop$11(GtkApplication.java:316)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading &apos;&lt;&apos;, no possible valid JSON value or punctuation could be recognized.
-	at groovy.json.JsonLexer.nextToken(JsonLexer.java:86)
-	at groovy.json.JsonLexer$nextToken.call(Unknown Source)
-	at json.path@5.1.1/io.restassured.internal.path.json.ConfigurableJsonSlurper.parse(ConfigurableJsonSlurper.groovy:97)
-	at io.restassured.internal.path.json.ConfigurableJsonSlurper$parse.callCurrent(Unknown Source)
-	at json.path@5.1.1/io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.groovy:83)
-	at json.path@5.1.1/io.restassured.path.json.JsonPath$4$1.method(JsonPath.java:965)
-	at json.path@5.1.1/io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1000)
-	... 82 more
 </pre></div></td>
 <td>2</td>
-<td>com.example.demo3.TestAPI.CreateComment.CreateCommentAll@44dd3f92</td></tr>
-<tr>
-<td title='com.example.demo3.TestAPI.CreateComment.CreateCommentAll.testAll()'><b>testAll</b><br>Test class: com.example.demo3.TestAPI.CreateComment.CreateCommentAll<br>Parameters: 1, N, Comment test, 20, 1004, Chưa đăng nhập</td>
-<td><div><pre>io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
-	at json.path@5.1.1/io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1002)
-	at json.path@5.1.1/io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:967)
-	at json.path@5.1.1/io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1047)
-	at json.path@5.1.1/io.restassured.path.json.JsonPath.get(JsonPath.java:202)
-	at com.example.demo/com.example.demo3.TestAPI.CreateComment.CreateCommentAll.testAll(CreateCommentAll.java:39)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at com.example.demo/com.example.demo3.Controller.Controller.SelectAll(Controller.java:1001)
-	at javafx.fxml@18/com.sun.javafx.fxml.MethodHelper.invoke(MethodHelper.java:84)
-	at javafx.fxml@18/javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1852)
-	at javafx.fxml@18/javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1724)
-	at javafx.base@18/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
-	at javafx.base@18/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:234)
-	at javafx.base@18/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
-	at javafx.base@18/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
-	at javafx.base@18/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
-	at javafx.base@18/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
-	at javafx.base@18/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
-	at javafx.base@18/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
-	at javafx.base@18/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
-	at javafx.base@18/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
-	at javafx.base@18/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
-	at javafx.base@18/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
-	at javafx.base@18/javafx.event.Event.fireEvent(Event.java:198)
-	at javafx.graphics@18/javafx.scene.Node.fireEvent(Node.java:8797)
-	at javafx.controls@18/javafx.scene.control.Button.fire(Button.java:203)
-	at javafx.controls@18/com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:208)
-	at javafx.controls@18/com.sun.javafx.scene.control.inputmap.InputMap.handle(InputMap.java:274)
-	at javafx.base@18/com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:247)
-	at javafx.base@18/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
-	at javafx.base@18/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:234)
-	at javafx.base@18/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
-	at javafx.base@18/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
-	at javafx.base@18/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
-	at javafx.base@18/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
-	at javafx.base@18/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
-	at javafx.base@18/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
-	at javafx.base@18/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
-	at javafx.base@18/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
-	at javafx.base@18/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
-	at javafx.base@18/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
-	at javafx.base@18/javafx.event.Event.fireEvent(Event.java:198)
-	at javafx.graphics@18/javafx.scene.Scene$MouseHandler.process(Scene.java:3881)
-	at javafx.graphics@18/javafx.scene.Scene.processMouseEvent(Scene.java:1874)
-	at javafx.graphics@18/javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2607)
-	at javafx.graphics@18/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:411)
-	at javafx.graphics@18/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:301)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
-	at javafx.graphics@18/com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:450)
-	at javafx.graphics@18/com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:424)
-	at javafx.graphics@18/com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:449)
-	at javafx.graphics@18/com.sun.glass.ui.View.handleMouseEvent(View.java:551)
-	at javafx.graphics@18/com.sun.glass.ui.View.notifyMouse(View.java:937)
-	at javafx.graphics@18/com.sun.glass.ui.gtk.GtkApplication._runLoop(Native Method)
-	at javafx.graphics@18/com.sun.glass.ui.gtk.GtkApplication.lambda$runLoop$11(GtkApplication.java:316)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading &apos;&lt;&apos;, no possible valid JSON value or punctuation could be recognized.
-	at groovy.json.JsonLexer.nextToken(JsonLexer.java:86)
-	at groovy.json.JsonLexer$nextToken.call(Unknown Source)
-	at json.path@5.1.1/io.restassured.internal.path.json.ConfigurableJsonSlurper.parse(ConfigurableJsonSlurper.groovy:97)
-	at io.restassured.internal.path.json.ConfigurableJsonSlurper$parse.callCurrent(Unknown Source)
-	at json.path@5.1.1/io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.groovy:83)
-	at json.path@5.1.1/io.restassured.path.json.JsonPath$4$1.method(JsonPath.java:965)
-	at json.path@5.1.1/io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1000)
-	... 82 more
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1806904360", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1806904360'><pre>io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
-	at json.path@5.1.1/io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1002)
-	at json.path@5.1.1/io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:967)
-	at json.path@5.1.1/io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1047)
-	at json.path@5.1.1/io.restassured.path.json.JsonPath.get(JsonPath.java:202)
-	at com.example.demo/com.example.demo3.TestAPI.CreateComment.CreateCommentAll.testAll(CreateCommentAll.java:39)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-	at org.testng@7.6.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng@7.6.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng@7.6.0/org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng@7.6.0/org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng@7.6.0/org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-	at org.testng@7.6.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng@7.6.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng@7.6.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng@7.6.0/org.testng.TestRunner.privateRun(TestRunner.java:806)
-	at org.testng@7.6.0/org.testng.TestRunner.run(TestRunner.java:601)
-	at org.testng@7.6.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-	at org.testng@7.6.0/org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-	at org.testng@7.6.0/org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-	at org.testng@7.6.0/org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng@7.6.0/org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng@7.6.0/org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng@7.6.0/org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng@7.6.0/org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng@7.6.0/org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng@7.6.0/org.testng.TestNG.run(TestNG.java:1067)
-	at com.example.demo/com.example.demo3.Controller.Controller.SelectAll(Controller.java:1001)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-	at com.sun.javafx.reflect.Trampoline.invoke(MethodUtil.java:77)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-	at javafx.base@18/com.sun.javafx.reflect.MethodUtil.invoke(MethodUtil.java:275)
-	at javafx.fxml@18/com.sun.javafx.fxml.MethodHelper.invoke(MethodHelper.java:84)
-	at javafx.fxml@18/javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1852)
-	at javafx.fxml@18/javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1724)
-	at javafx.base@18/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
-	at javafx.base@18/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:234)
-	at javafx.base@18/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
-	at javafx.base@18/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
-	at javafx.base@18/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
-	at javafx.base@18/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
-	at javafx.base@18/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
-	at javafx.base@18/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
-	at javafx.base@18/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
-	at javafx.base@18/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
-	at javafx.base@18/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
-	at javafx.base@18/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
-	at javafx.base@18/javafx.event.Event.fireEvent(Event.java:198)
-	at javafx.graphics@18/javafx.scene.Node.fireEvent(Node.java:8797)
-	at javafx.controls@18/javafx.scene.control.Button.fire(Button.java:203)
-	at javafx.controls@18/com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:208)
-	at javafx.controls@18/com.sun.javafx.scene.control.inputmap.InputMap.handle(InputMap.java:274)
-	at javafx.base@18/com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:247)
-	at javafx.base@18/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
-	at javafx.base@18/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:234)
-	at javafx.base@18/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
-	at javafx.base@18/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
-	at javafx.base@18/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
-	at javafx.base@18/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
-	at javafx.base@18/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
-	at javafx.base@18/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
-	at javafx.base@18/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
-	at javafx.base@18/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
-	at javafx.base@18/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
-	at javafx.base@18/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
-	at javafx.base@18/javafx.event.Event.fireEvent(Event.java:198)
-	at javafx.graphics@18/javafx.scene.Scene$MouseHandler.process(Scene.java:3881)
-	at javafx.graphics@18/javafx.scene.Scene.processMouseEvent(Scene.java:1874)
-	at javafx.graphics@18/javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2607)
-	at javafx.graphics@18/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:411)
-	at javafx.graphics@18/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:301)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
-	at javafx.graphics@18/com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:450)
-	at javafx.graphics@18/com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:424)
-	at javafx.graphics@18/com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:449)
-	at javafx.graphics@18/com.sun.glass.ui.View.handleMouseEvent(View.java:551)
-	at javafx.graphics@18/com.sun.glass.ui.View.notifyMouse(View.java:937)
-	at javafx.graphics@18/com.sun.glass.ui.gtk.GtkApplication._runLoop(Native Method)
-	at javafx.graphics@18/com.sun.glass.ui.gtk.GtkApplication.lambda$runLoop$11(GtkApplication.java:316)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading &apos;&lt;&apos;, no possible valid JSON value or punctuation could be recognized.
-	at groovy.json.JsonLexer.nextToken(JsonLexer.java:86)
-	at groovy.json.JsonLexer$nextToken.call(Unknown Source)
-	at json.path@5.1.1/io.restassured.internal.path.json.ConfigurableJsonSlurper.parse(ConfigurableJsonSlurper.groovy:97)
-	at io.restassured.internal.path.json.ConfigurableJsonSlurper$parse.callCurrent(Unknown Source)
-	at json.path@5.1.1/io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.groovy:83)
-	at json.path@5.1.1/io.restassured.path.json.JsonPath$4$1.method(JsonPath.java:965)
-	at json.path@5.1.1/io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1000)
-	... 82 more
-</pre></div></td>
-<td>1</td>
-<td>com.example.demo3.TestAPI.CreateComment.CreateCommentAll@44dd3f92</td></tr>
-<tr>
-<td title='com.example.demo3.TestAPI.CreateComment.CreateCommentAll.testAll()'><b>testAll</b><br>Test class: com.example.demo3.TestAPI.CreateComment.CreateCommentAll<br>Parameters: 6, Y, Qua ghe gom, 5, 1000, OK</td>
-<td><div><pre>io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
-	at json.path@5.1.1/io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1002)
-	at json.path@5.1.1/io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:967)
-	at json.path@5.1.1/io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1047)
-	at json.path@5.1.1/io.restassured.path.json.JsonPath.get(JsonPath.java:202)
-	at com.example.demo/com.example.demo3.TestAPI.CreateComment.CreateCommentAll.testAll(CreateCommentAll.java:39)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at com.example.demo/com.example.demo3.Controller.Controller.SelectAll(Controller.java:1001)
-	at javafx.fxml@18/com.sun.javafx.fxml.MethodHelper.invoke(MethodHelper.java:84)
-	at javafx.fxml@18/javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1852)
-	at javafx.fxml@18/javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1724)
-	at javafx.base@18/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
-	at javafx.base@18/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:234)
-	at javafx.base@18/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
-	at javafx.base@18/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
-	at javafx.base@18/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
-	at javafx.base@18/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
-	at javafx.base@18/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
-	at javafx.base@18/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
-	at javafx.base@18/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
-	at javafx.base@18/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
-	at javafx.base@18/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
-	at javafx.base@18/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
-	at javafx.base@18/javafx.event.Event.fireEvent(Event.java:198)
-	at javafx.graphics@18/javafx.scene.Node.fireEvent(Node.java:8797)
-	at javafx.controls@18/javafx.scene.control.Button.fire(Button.java:203)
-	at javafx.controls@18/com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:208)
-	at javafx.controls@18/com.sun.javafx.scene.control.inputmap.InputMap.handle(InputMap.java:274)
-	at javafx.base@18/com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:247)
-	at javafx.base@18/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
-	at javafx.base@18/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:234)
-	at javafx.base@18/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
-	at javafx.base@18/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
-	at javafx.base@18/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
-	at javafx.base@18/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
-	at javafx.base@18/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
-	at javafx.base@18/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
-	at javafx.base@18/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
-	at javafx.base@18/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
-	at javafx.base@18/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
-	at javafx.base@18/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
-	at javafx.base@18/javafx.event.Event.fireEvent(Event.java:198)
-	at javafx.graphics@18/javafx.scene.Scene$MouseHandler.process(Scene.java:3881)
-	at javafx.graphics@18/javafx.scene.Scene.processMouseEvent(Scene.java:1874)
-	at javafx.graphics@18/javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2607)
-	at javafx.graphics@18/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:411)
-	at javafx.graphics@18/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:301)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
-	at javafx.graphics@18/com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:450)
-	at javafx.graphics@18/com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:424)
-	at javafx.graphics@18/com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:449)
-	at javafx.graphics@18/com.sun.glass.ui.View.handleMouseEvent(View.java:551)
-	at javafx.graphics@18/com.sun.glass.ui.View.notifyMouse(View.java:937)
-	at javafx.graphics@18/com.sun.glass.ui.gtk.GtkApplication._runLoop(Native Method)
-	at javafx.graphics@18/com.sun.glass.ui.gtk.GtkApplication.lambda$runLoop$11(GtkApplication.java:316)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading &apos;&lt;&apos;, no possible valid JSON value or punctuation could be recognized.
-	at groovy.json.JsonLexer.nextToken(JsonLexer.java:86)
-	at groovy.json.JsonLexer$nextToken.call(Unknown Source)
-	at json.path@5.1.1/io.restassured.internal.path.json.ConfigurableJsonSlurper.parse(ConfigurableJsonSlurper.groovy:97)
-	at io.restassured.internal.path.json.ConfigurableJsonSlurper$parse.callCurrent(Unknown Source)
-	at json.path@5.1.1/io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.groovy:83)
-	at json.path@5.1.1/io.restassured.path.json.JsonPath$4$1.method(JsonPath.java:965)
-	at json.path@5.1.1/io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1000)
-	... 82 more
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1613934889", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1613934889'><pre>io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
-	at json.path@5.1.1/io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1002)
-	at json.path@5.1.1/io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:967)
-	at json.path@5.1.1/io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1047)
-	at json.path@5.1.1/io.restassured.path.json.JsonPath.get(JsonPath.java:202)
-	at com.example.demo/com.example.demo3.TestAPI.CreateComment.CreateCommentAll.testAll(CreateCommentAll.java:39)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-	at org.testng@7.6.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng@7.6.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng@7.6.0/org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng@7.6.0/org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng@7.6.0/org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-	at org.testng@7.6.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng@7.6.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng@7.6.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng@7.6.0/org.testng.TestRunner.privateRun(TestRunner.java:806)
-	at org.testng@7.6.0/org.testng.TestRunner.run(TestRunner.java:601)
-	at org.testng@7.6.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-	at org.testng@7.6.0/org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-	at org.testng@7.6.0/org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-	at org.testng@7.6.0/org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng@7.6.0/org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng@7.6.0/org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng@7.6.0/org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng@7.6.0/org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng@7.6.0/org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng@7.6.0/org.testng.TestNG.run(TestNG.java:1067)
-	at com.example.demo/com.example.demo3.Controller.Controller.SelectAll(Controller.java:1001)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-	at com.sun.javafx.reflect.Trampoline.invoke(MethodUtil.java:77)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-	at javafx.base@18/com.sun.javafx.reflect.MethodUtil.invoke(MethodUtil.java:275)
-	at javafx.fxml@18/com.sun.javafx.fxml.MethodHelper.invoke(MethodHelper.java:84)
-	at javafx.fxml@18/javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1852)
-	at javafx.fxml@18/javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1724)
-	at javafx.base@18/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
-	at javafx.base@18/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:234)
-	at javafx.base@18/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
-	at javafx.base@18/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
-	at javafx.base@18/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
-	at javafx.base@18/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
-	at javafx.base@18/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
-	at javafx.base@18/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
-	at javafx.base@18/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
-	at javafx.base@18/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
-	at javafx.base@18/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
-	at javafx.base@18/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
-	at javafx.base@18/javafx.event.Event.fireEvent(Event.java:198)
-	at javafx.graphics@18/javafx.scene.Node.fireEvent(Node.java:8797)
-	at javafx.controls@18/javafx.scene.control.Button.fire(Button.java:203)
-	at javafx.controls@18/com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:208)
-	at javafx.controls@18/com.sun.javafx.scene.control.inputmap.InputMap.handle(InputMap.java:274)
-	at javafx.base@18/com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:247)
-	at javafx.base@18/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
-	at javafx.base@18/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:234)
-	at javafx.base@18/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
-	at javafx.base@18/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
-	at javafx.base@18/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
-	at javafx.base@18/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
-	at javafx.base@18/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
-	at javafx.base@18/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
-	at javafx.base@18/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
-	at javafx.base@18/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
-	at javafx.base@18/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
-	at javafx.base@18/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
-	at javafx.base@18/javafx.event.Event.fireEvent(Event.java:198)
-	at javafx.graphics@18/javafx.scene.Scene$MouseHandler.process(Scene.java:3881)
-	at javafx.graphics@18/javafx.scene.Scene.processMouseEvent(Scene.java:1874)
-	at javafx.graphics@18/javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2607)
-	at javafx.graphics@18/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:411)
-	at javafx.graphics@18/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:301)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
-	at javafx.graphics@18/com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:450)
-	at javafx.graphics@18/com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:424)
-	at javafx.graphics@18/com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:449)
-	at javafx.graphics@18/com.sun.glass.ui.View.handleMouseEvent(View.java:551)
-	at javafx.graphics@18/com.sun.glass.ui.View.notifyMouse(View.java:937)
-	at javafx.graphics@18/com.sun.glass.ui.gtk.GtkApplication._runLoop(Native Method)
-	at javafx.graphics@18/com.sun.glass.ui.gtk.GtkApplication.lambda$runLoop$11(GtkApplication.java:316)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading &apos;&lt;&apos;, no possible valid JSON value or punctuation could be recognized.
-	at groovy.json.JsonLexer.nextToken(JsonLexer.java:86)
-	at groovy.json.JsonLexer$nextToken.call(Unknown Source)
-	at json.path@5.1.1/io.restassured.internal.path.json.ConfigurableJsonSlurper.parse(ConfigurableJsonSlurper.groovy:97)
-	at io.restassured.internal.path.json.ConfigurableJsonSlurper$parse.callCurrent(Unknown Source)
-	at json.path@5.1.1/io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.groovy:83)
-	at json.path@5.1.1/io.restassured.path.json.JsonPath$4$1.method(JsonPath.java:965)
-	at json.path@5.1.1/io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1000)
-	... 82 more
-</pre></div></td>
-<td>2</td>
-<td>com.example.demo3.TestAPI.CreateComment.CreateCommentAll@44dd3f92</td></tr>
-<tr>
-<td title='com.example.demo3.TestAPI.CreateComment.CreateCommentAll.testAll()'><b>testAll</b><br>Test class: com.example.demo3.TestAPI.CreateComment.CreateCommentAll<br>Parameters: 4, Y, Qua ghe gom, 3, 1000, OK</td>
-<td><div><pre>io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
-	at json.path@5.1.1/io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1002)
-	at json.path@5.1.1/io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:967)
-	at json.path@5.1.1/io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1047)
-	at json.path@5.1.1/io.restassured.path.json.JsonPath.get(JsonPath.java:202)
-	at com.example.demo/com.example.demo3.TestAPI.CreateComment.CreateCommentAll.testAll(CreateCommentAll.java:39)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at com.example.demo/com.example.demo3.Controller.Controller.SelectAll(Controller.java:1001)
-	at javafx.fxml@18/com.sun.javafx.fxml.MethodHelper.invoke(MethodHelper.java:84)
-	at javafx.fxml@18/javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1852)
-	at javafx.fxml@18/javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1724)
-	at javafx.base@18/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
-	at javafx.base@18/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:234)
-	at javafx.base@18/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
-	at javafx.base@18/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
-	at javafx.base@18/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
-	at javafx.base@18/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
-	at javafx.base@18/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
-	at javafx.base@18/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
-	at javafx.base@18/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
-	at javafx.base@18/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
-	at javafx.base@18/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
-	at javafx.base@18/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
-	at javafx.base@18/javafx.event.Event.fireEvent(Event.java:198)
-	at javafx.graphics@18/javafx.scene.Node.fireEvent(Node.java:8797)
-	at javafx.controls@18/javafx.scene.control.Button.fire(Button.java:203)
-	at javafx.controls@18/com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:208)
-	at javafx.controls@18/com.sun.javafx.scene.control.inputmap.InputMap.handle(InputMap.java:274)
-	at javafx.base@18/com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:247)
-	at javafx.base@18/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
-	at javafx.base@18/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:234)
-	at javafx.base@18/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
-	at javafx.base@18/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
-	at javafx.base@18/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
-	at javafx.base@18/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
-	at javafx.base@18/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
-	at javafx.base@18/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
-	at javafx.base@18/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
-	at javafx.base@18/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
-	at javafx.base@18/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
-	at javafx.base@18/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
-	at javafx.base@18/javafx.event.Event.fireEvent(Event.java:198)
-	at javafx.graphics@18/javafx.scene.Scene$MouseHandler.process(Scene.java:3881)
-	at javafx.graphics@18/javafx.scene.Scene.processMouseEvent(Scene.java:1874)
-	at javafx.graphics@18/javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2607)
-	at javafx.graphics@18/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:411)
-	at javafx.graphics@18/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:301)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
-	at javafx.graphics@18/com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:450)
-	at javafx.graphics@18/com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:424)
-	at javafx.graphics@18/com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:449)
-	at javafx.graphics@18/com.sun.glass.ui.View.handleMouseEvent(View.java:551)
-	at javafx.graphics@18/com.sun.glass.ui.View.notifyMouse(View.java:937)
-	at javafx.graphics@18/com.sun.glass.ui.gtk.GtkApplication._runLoop(Native Method)
-	at javafx.graphics@18/com.sun.glass.ui.gtk.GtkApplication.lambda$runLoop$11(GtkApplication.java:316)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading &apos;&lt;&apos;, no possible valid JSON value or punctuation could be recognized.
-	at groovy.json.JsonLexer.nextToken(JsonLexer.java:86)
-	at groovy.json.JsonLexer$nextToken.call(Unknown Source)
-	at json.path@5.1.1/io.restassured.internal.path.json.ConfigurableJsonSlurper.parse(ConfigurableJsonSlurper.groovy:97)
-	at io.restassured.internal.path.json.ConfigurableJsonSlurper$parse.callCurrent(Unknown Source)
-	at json.path@5.1.1/io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.groovy:83)
-	at json.path@5.1.1/io.restassured.path.json.JsonPath$4$1.method(JsonPath.java:965)
-	at json.path@5.1.1/io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1000)
-	... 82 more
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1239317024", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1239317024'><pre>io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
-	at json.path@5.1.1/io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1002)
-	at json.path@5.1.1/io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:967)
-	at json.path@5.1.1/io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1047)
-	at json.path@5.1.1/io.restassured.path.json.JsonPath.get(JsonPath.java:202)
-	at com.example.demo/com.example.demo3.TestAPI.CreateComment.CreateCommentAll.testAll(CreateCommentAll.java:39)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-	at org.testng@7.6.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng@7.6.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng@7.6.0/org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng@7.6.0/org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng@7.6.0/org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-	at org.testng@7.6.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng@7.6.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng@7.6.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng@7.6.0/org.testng.TestRunner.privateRun(TestRunner.java:806)
-	at org.testng@7.6.0/org.testng.TestRunner.run(TestRunner.java:601)
-	at org.testng@7.6.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-	at org.testng@7.6.0/org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-	at org.testng@7.6.0/org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-	at org.testng@7.6.0/org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng@7.6.0/org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng@7.6.0/org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng@7.6.0/org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng@7.6.0/org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng@7.6.0/org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng@7.6.0/org.testng.TestNG.run(TestNG.java:1067)
-	at com.example.demo/com.example.demo3.Controller.Controller.SelectAll(Controller.java:1001)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-	at com.sun.javafx.reflect.Trampoline.invoke(MethodUtil.java:77)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-	at javafx.base@18/com.sun.javafx.reflect.MethodUtil.invoke(MethodUtil.java:275)
-	at javafx.fxml@18/com.sun.javafx.fxml.MethodHelper.invoke(MethodHelper.java:84)
-	at javafx.fxml@18/javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1852)
-	at javafx.fxml@18/javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1724)
-	at javafx.base@18/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
-	at javafx.base@18/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:234)
-	at javafx.base@18/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
-	at javafx.base@18/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
-	at javafx.base@18/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
-	at javafx.base@18/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
-	at javafx.base@18/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
-	at javafx.base@18/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
-	at javafx.base@18/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
-	at javafx.base@18/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
-	at javafx.base@18/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
-	at javafx.base@18/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
-	at javafx.base@18/javafx.event.Event.fireEvent(Event.java:198)
-	at javafx.graphics@18/javafx.scene.Node.fireEvent(Node.java:8797)
-	at javafx.controls@18/javafx.scene.control.Button.fire(Button.java:203)
-	at javafx.controls@18/com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:208)
-	at javafx.controls@18/com.sun.javafx.scene.control.inputmap.InputMap.handle(InputMap.java:274)
-	at javafx.base@18/com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:247)
-	at javafx.base@18/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
-	at javafx.base@18/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:234)
-	at javafx.base@18/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
-	at javafx.base@18/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
-	at javafx.base@18/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
-	at javafx.base@18/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
-	at javafx.base@18/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
-	at javafx.base@18/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
-	at javafx.base@18/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
-	at javafx.base@18/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
-	at javafx.base@18/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
-	at javafx.base@18/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
-	at javafx.base@18/javafx.event.Event.fireEvent(Event.java:198)
-	at javafx.graphics@18/javafx.scene.Scene$MouseHandler.process(Scene.java:3881)
-	at javafx.graphics@18/javafx.scene.Scene.processMouseEvent(Scene.java:1874)
-	at javafx.graphics@18/javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2607)
-	at javafx.graphics@18/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:411)
-	at javafx.graphics@18/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:301)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
-	at javafx.graphics@18/com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:450)
-	at javafx.graphics@18/com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:424)
-	at javafx.graphics@18/com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:449)
-	at javafx.graphics@18/com.sun.glass.ui.View.handleMouseEvent(View.java:551)
-	at javafx.graphics@18/com.sun.glass.ui.View.notifyMouse(View.java:937)
-	at javafx.graphics@18/com.sun.glass.ui.gtk.GtkApplication._runLoop(Native Method)
-	at javafx.graphics@18/com.sun.glass.ui.gtk.GtkApplication.lambda$runLoop$11(GtkApplication.java:316)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading &apos;&lt;&apos;, no possible valid JSON value or punctuation could be recognized.
-	at groovy.json.JsonLexer.nextToken(JsonLexer.java:86)
-	at groovy.json.JsonLexer$nextToken.call(Unknown Source)
-	at json.path@5.1.1/io.restassured.internal.path.json.ConfigurableJsonSlurper.parse(ConfigurableJsonSlurper.groovy:97)
-	at io.restassured.internal.path.json.ConfigurableJsonSlurper$parse.callCurrent(Unknown Source)
-	at json.path@5.1.1/io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.groovy:83)
-	at json.path@5.1.1/io.restassured.path.json.JsonPath$4$1.method(JsonPath.java:965)
-	at json.path@5.1.1/io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1000)
-	... 82 more
-</pre></div></td>
-<td>2</td>
-<td>com.example.demo3.TestAPI.CreateComment.CreateCommentAll@44dd3f92</td></tr>
+<td>com.example.demo3.TestAPI.SignUp.Signup@5308c360</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -741,35 +227,50 @@ Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.example.demo3.TestAPI.CreateComment.CreateCommentAll.testAll()'><b>testAll</b><br>Test class: com.example.demo3.TestAPI.CreateComment.CreateCommentAll<br>Parameters: 7, Y, Qua ghe gom, 6, 1000, OK</td>
+<td title='com.example.demo3.TestAPI.SignUp.Signup.testAll()'><b>testAll</b><br>Test class: com.example.demo3.TestAPI.SignUp.Signup<br>Parameters: quangnghia@gmail.com, 123456, 123456, , Pham Quang Nghia, dadvakvvaklvdavnvadvdkkdsaviawhfaifdasjadilvdajoipfjeiowajvdjajdajvjdavklnknknknkav avvdalalkvkvd avdsasvd jajvljldajvlda vdskalv dklavdfdsdvdsvdvsdvdsvdsvsvvdv sahjkvadnvjdnavjdnjvknkvajndvjkanvlkjdnfajvncjkvnaknvdjnavjndlavdnjalvnjdnavndjkanvjdnavljaknvdnlakjvldnalvkjdnlkanvldavnckanvljkdanvjkdnajkvndajkvnjkdanvjkdnavndlavnldavnjdnvkjdanv,  , 1001, name: &phone: The phone format is invalid.&address: &email: 7004&password: &re_pass:  &avatar: </td>
 <td></td>
-<td>2</td>
-<td>com.example.demo3.TestAPI.CreateComment.CreateCommentAll@44dd3f92</td></tr>
+<td>1</td>
+<td>com.example.demo3.TestAPI.SignUp.Signup@5308c360</td></tr>
 <tr>
-<td title='com.example.demo3.TestAPI.CreateComment.CreateCommentAll.testAll()'><b>testAll</b><br>Test class: com.example.demo3.TestAPI.CreateComment.CreateCommentAll<br>Parameters: 1, Y, Qua ghe gom, 20, 1000, OK</td>
+<td title='com.example.demo3.TestAPI.SignUp.Signup.testAll()'><b>testAll</b><br>Test class: com.example.demo3.TestAPI.SignUp.Signup<br>Parameters: quangnghia@gmail.com, 123456, 123, , Pham Quang Nghia, 0989686201, , 1001, name: &phone: &address: &email: 7004&password: &re_pass: 7003 &avatar: </td>
 <td></td>
-<td>4</td>
-<td>com.example.demo3.TestAPI.CreateComment.CreateCommentAll@44dd3f92</td></tr>
+<td>1</td>
+<td>com.example.demo3.TestAPI.SignUp.Signup@5308c360</td></tr>
 <tr>
-<td title='com.example.demo3.TestAPI.CreateComment.CreateCommentAll.testAll()'><b>testAll</b><br>Test class: com.example.demo3.TestAPI.CreateComment.CreateCommentAll<br>Parameters: 3, Y, Qua ghe gom, 2, 1000, OK</td>
+<td title='com.example.demo3.TestAPI.SignUp.Signup.testAll()'><b>testAll</b><br>Test class: com.example.demo3.TestAPI.SignUp.Signup<br>Parameters: jfajfwaaf@gmail.com, 1234566, 1234566, H hehe, TR mh Hi, 3568663, C:\Users\Admin\Postman\files\image.png, 1001, name: &phone: &address: &email: 7004&password: &re_pass:  &avatar: </td>
 <td></td>
-<td>2</td>
-<td>com.example.demo3.TestAPI.CreateComment.CreateCommentAll@44dd3f92</td></tr>
+<td>1</td>
+<td>com.example.demo3.TestAPI.SignUp.Signup@5308c360</td></tr>
 <tr>
-<td title='com.example.demo3.TestAPI.CreateComment.CreateCommentAll.testAll()'><b>testAll</b><br>Test class: com.example.demo3.TestAPI.CreateComment.CreateCommentAll<br>Parameters: 9, Y, Qua ghe gom, 8, 1000, OK</td>
+<td title='com.example.demo3.TestAPI.SignUp.Signup.testAll()'><b>testAll</b><br>Test class: com.example.demo3.TestAPI.SignUp.Signup<br>Parameters: quangnghia@gmail.com, dadvakvvaklvdavnvadvdkkdsaviawhfaifdasjadilvdajoipfjeiowajvdjajdajvjdavklnknknknkav avvdalalkvkvd avdsasvd jajvljldajvlda vdskalv dklavdfdsdvdsvdvsdvdsvdsvsvvdv sahjkvadnvjdnavjdnjvknkvajndvjkanvlkjdnfajvncjkvnaknvdjnavjndlavdnjalvnjdnavndjkanvjdnavljaknvdnlakjvldnalvkjdnlkanvldavnckanvljkdanvjkdnajkvndajkvnjkdanvjkdnavndlavnldavnjdnvkjdanv, dadvakvvaklvdavnvadvdkkdsaviawhfaifdasjadilvdajoipfjeiowajvdjajdajvjdavklnknknknkav avvdalalkvkvd avdsasvd jajvljldajvlda vdskalv dklavdfdsdvdsvdvsdvdsvdsvsvvdv sahjkvadnvjdnavjdnjvknkvajndvjkanvlkjdnfajvncjkvnaknvdjnavjndlavdnjalvnjdnavndjkanvjdnavljaknvdnlakjvldnalvkjdnlkanvldavnckanvljkdanvjkdnajkvndajkvnjkdanvjkdnavndlavnldavnjdnvkjdanv,  , Pham Quang Nghia, 0989686201, , 1001, name: &phone: &address: &email: 7004&password: 7001&re_pass: 7001 &avatar: </td>
 <td></td>
-<td>2</td>
-<td>com.example.demo3.TestAPI.CreateComment.CreateCommentAll@44dd3f92</td></tr>
+<td>1</td>
+<td>com.example.demo3.TestAPI.SignUp.Signup@5308c360</td></tr>
 <tr>
-<td title='com.example.demo3.TestAPI.CreateComment.CreateCommentAll.testAll()'><b>testAll</b><br>Test class: com.example.demo3.TestAPI.CreateComment.CreateCommentAll<br>Parameters: 2, Y, Qua ghe gom, 1, 1000, OK</td>
+<td title='com.example.demo3.TestAPI.SignUp.Signup.testAll()'><b>testAll</b><br>Test class: com.example.demo3.TestAPI.SignUp.Signup<br>Parameters: quangnghia.ns@gmail.com, 123456, , , dadvakvvaklvdavnvadvdkkdsaviawhfaifdasjadilvdajoipfjeiowajvdjajdajvjdavklnknknknkav avvdalalkvkvd avdsasvd jajvljldajvlda vdskalv dklavdfdsdvdsvdvsdvdsvdsvsvvdv sahjkvadnvjdnavjdnjvknkvajndvjkanvlkjdnfajvncjkvnaknvdjnavjndlavdnjalvnjdnavndjkanvjdnavljaknvdnlakjvldnalvkjdnlkanvldavnckanvljkdanvjkdnajkvndajkvnjkdanvjkdnavndlavnldavnjdnvkjdanv, 0989686201,  , 1001, name: 7001&phone: &address: &email: 7004&password: &re_pass: 7000 &avatar: </td>
 <td></td>
-<td>2</td>
-<td>com.example.demo3.TestAPI.CreateComment.CreateCommentAll@44dd3f92</td></tr>
+<td>1</td>
+<td>com.example.demo3.TestAPI.SignUp.Signup@5308c360</td></tr>
 <tr>
-<td title='com.example.demo3.TestAPI.CreateComment.CreateCommentAll.testAll()'><b>testAll</b><br>Test class: com.example.demo3.TestAPI.CreateComment.CreateCommentAll<br>Parameters: 8, Y, Qua ghe gom, 7, 1000, OK</td>
+<td title='com.example.demo3.TestAPI.SignUp.Signup.testAll()'><b>testAll</b><br>Test class: com.example.demo3.TestAPI.SignUp.Signup<br>Parameters: , , , , , , , 1001, name: 7000&phone: 7000&address: &email: 7000&password: 7000&re_pass:  &avatar: </td>
 <td></td>
-<td>2</td>
-<td>com.example.demo3.TestAPI.CreateComment.CreateCommentAll@44dd3f92</td></tr>
+<td>1</td>
+<td>com.example.demo3.TestAPI.SignUp.Signup@5308c360</td></tr>
+<tr>
+<td title='com.example.demo3.TestAPI.SignUp.Signup.testAll()'><b>testAll</b><br>Test class: com.example.demo3.TestAPI.SignUp.Signup<br>Parameters: quangnghia, 123456, 123456, , Pham Quang Nghia, 0989686201, , 1001, name: &phone: &address: &email: 7002&password: &re_pass:  &avatar: </td>
+<td></td>
+<td>1</td>
+<td>com.example.demo3.TestAPI.SignUp.Signup@5308c360</td></tr>
+<tr>
+<td title='com.example.demo3.TestAPI.SignUp.Signup.testAll()'><b>testAll</b><br>Test class: com.example.demo3.TestAPI.SignUp.Signup<br>Parameters: quangnghia@gmail.com, 123456, 123456, dadvakvvaklvdavnvadvdkkdsaviawhfaifdasjadilvdajoipfjeiowajvdjajdajvjdavklnknknknkav avvdalalkvkvd avdsasvd jajvljldajvlda vdskalv dklavdfdsdvdsvdvsdvdsvdsvsvvdv sahjkvadnvjdnavjdnjvknkvajndvjkanvlkjdnfajvncjkvnaknvdjnavjndlavdnjalvnjdnavndjkanvjdnavljaknvdnlakjvldnalvkjdnlkanvldavnckanvljkdanvjkdnajkvndajkvnjkdanvjkdnavndlavnldavnjdnvkjdanv, Pham Quang Nghia, 0989686201, , 1001, name: &phone: &address: 7001&email: 7004&password: &re_pass:  &avatar: </td>
+<td></td>
+<td>1</td>
+<td>com.example.demo3.TestAPI.SignUp.Signup@5308c360</td></tr>
+<tr>
+<td title='com.example.demo3.TestAPI.SignUp.Signup.testAll()'><b>testAll</b><br>Test class: com.example.demo3.TestAPI.SignUp.Signup<br>Parameters: dadvakvvaklvdavnvadvdkkdsaviawhfaifdasjadilvdajoipfjeiowajvdjajdajvjdavklnknknknkav avvdalalkvkvd avdsasvd jajvljldajvlda vdskalv dklavdfdsdvdsvdvsdvdsvdsvsvvdv sahjkvadnvjdnavjdnjvknkvajndvjkanvlkjdnfajvncjkvnaknvdjnavjndlavdnjalvnjdnavndjkanvjdnavljaknvdnlakjvldnalvkjdnlkanvldavnckanvljkdanvjkdnajkvndajkvnjkdanvjkdnavndlavnldavnjdnvkjdanv, 123456, 123456, , Pham Quang Nghia, 0989686201, , 1001, name: &phone: &address: &email: 7002&password: &re_pass:  &avatar: </td>
+<td></td>
+<td>1</td>
+<td>com.example.demo3.TestAPI.SignUp.Signup@5308c360</td></tr>
 </table><p>
 </body>
 </html>
