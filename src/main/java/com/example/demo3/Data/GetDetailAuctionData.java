@@ -18,6 +18,7 @@ public class GetDetailAuctionData {
 		for (int i = 4; i < n; i++) {
 			for (int j = 1; j <= 3; j++) {
 				data[i - 4][j - 1] = excel.getCellData(i, j);
+				System.out.println(data[i - 4][j - 1]);
 			}
 		}
 		return data;

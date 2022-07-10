@@ -19,7 +19,7 @@ import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
-public class CreateAuctionAll {
+public class 	CreateAuctionAll {
 	public static StringBuilder a = new StringBuilder();
 	private static final DecimalFormat df = new DecimalFormat("0.00");
 	@Test(dataProvider = "CreateAuctionDataProvider", dataProviderClass = CreateAuctionData.class)

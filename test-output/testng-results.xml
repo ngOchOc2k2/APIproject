@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="10" passed="6" failed="4" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-09T23:23:44 ICT" name="Command line suite" finished-at="2022-07-09T23:23:59 ICT" duration-ms="15112">
+  <suite started-at="2022-07-10T08:20:54 ICT" name="Command line suite" finished-at="2022-07-10T08:21:22 ICT" duration-ms="27567">
     <groups>
     </groups>
-    <test started-at="2022-07-09T23:23:44 ICT" name="Command line test" finished-at="2022-07-09T23:23:59 ICT" duration-ms="15112">
-      <class name="com.example.demo3.TestAPI.GetListComment.GetListComment">
-        <test-method signature="testAll(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.example.demo3.TestAPI.GetListComment.GetListComment@6446f138]" started-at="2022-07-09T23:23:44 ICT" name="testAll" data-provider="GetListCommentDataProvider" finished-at="2022-07-09T23:23:46 ICT" duration-ms="1455" status="PASS">
+    <test started-at="2022-07-10T08:20:54 ICT" name="Command line test" finished-at="2022-07-10T08:21:22 ICT" duration-ms="27567">
+      <class name="com.example.demo3.TestAPI.CreateComment.CreateCommentAll">
+        <test-method signature="testAll(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.example.demo3.TestAPI.CreateComment.CreateCommentAll@44dd3f92]" started-at="2022-07-10T08:20:54 ICT" name="testAll" data-provider="CreateCommentDataProvider" finished-at="2022-07-10T08:20:59 ICT" duration-ms="4524" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -16,20 +16,25 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[1]]>
+                <![CDATA[Y]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[5]]>
+                <![CDATA[Qua ghe gom]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[1000]]>
+                <![CDATA[20]]>
               </value>
             </param>
             <param index="4">
+              <value>
+                <![CDATA[1000]]>
+              </value>
+            </param>
+            <param index="5">
               <value>
                 <![CDATA[OK]]>
               </value>
@@ -38,7 +43,144 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAll -->
-        <test-method signature="testAll(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.example.demo3.TestAPI.GetListComment.GetListComment@6446f138]" started-at="2022-07-09T23:23:46 ICT" name="testAll" data-provider="GetListCommentDataProvider" finished-at="2022-07-09T23:23:47 ICT" duration-ms="1504" status="PASS">
+        <test-method signature="testAll(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.example.demo3.TestAPI.CreateComment.CreateCommentAll@44dd3f92]" started-at="2022-07-10T08:20:59 ICT" name="testAll" data-provider="CreateCommentDataProvider" finished-at="2022-07-10T08:21:00 ICT" duration-ms="1349" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[N]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Comment test]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[20]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[1004]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Chưa đăng nhập]]>
+              </value>
+            </param>
+          </params>
+          <exception class="io.restassured.path.json.exception.JsonPathException">
+            <message>
+              <![CDATA[Failed to parse the JSON document]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
+at json.path@5.1.1/io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1002)
+at json.path@5.1.1/io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:967)
+at json.path@5.1.1/io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1047)
+at json.path@5.1.1/io.restassured.path.json.JsonPath.get(JsonPath.java:202)
+at com.example.demo/com.example.demo3.TestAPI.CreateComment.CreateCommentAll.testAll(CreateCommentAll.java:39)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng@7.6.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng@7.6.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng@7.6.0/org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng@7.6.0/org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng@7.6.0/org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng@7.6.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng@7.6.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng@7.6.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng@7.6.0/org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng@7.6.0/org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng@7.6.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng@7.6.0/org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng@7.6.0/org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng@7.6.0/org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng@7.6.0/org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng@7.6.0/org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng@7.6.0/org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng@7.6.0/org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng@7.6.0/org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng@7.6.0/org.testng.TestNG.run(TestNG.java:1067)
+at com.example.demo/com.example.demo3.Controller.Controller.SelectAll(Controller.java:1001)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at com.sun.javafx.reflect.Trampoline.invoke(MethodUtil.java:77)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at javafx.base@18/com.sun.javafx.reflect.MethodUtil.invoke(MethodUtil.java:275)
+at javafx.fxml@18/com.sun.javafx.fxml.MethodHelper.invoke(MethodHelper.java:84)
+at javafx.fxml@18/javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1852)
+at javafx.fxml@18/javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1724)
+at javafx.base@18/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+at javafx.base@18/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:234)
+at javafx.base@18/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+at javafx.base@18/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+at javafx.base@18/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+at javafx.base@18/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+at javafx.base@18/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+at javafx.base@18/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+at javafx.base@18/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+at javafx.base@18/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+at javafx.base@18/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+at javafx.base@18/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+at javafx.base@18/javafx.event.Event.fireEvent(Event.java:198)
+at javafx.graphics@18/javafx.scene.Node.fireEvent(Node.java:8797)
+at javafx.controls@18/javafx.scene.control.Button.fire(Button.java:203)
+at javafx.controls@18/com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:208)
+at javafx.controls@18/com.sun.javafx.scene.control.inputmap.InputMap.handle(InputMap.java:274)
+at javafx.base@18/com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:247)
+at javafx.base@18/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+at javafx.base@18/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:234)
+at javafx.base@18/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+at javafx.base@18/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+at javafx.base@18/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+at javafx.base@18/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+at javafx.base@18/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+at javafx.base@18/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+at javafx.base@18/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+at javafx.base@18/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+at javafx.base@18/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+at javafx.base@18/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+at javafx.base@18/javafx.event.Event.fireEvent(Event.java:198)
+at javafx.graphics@18/javafx.scene.Scene$MouseHandler.process(Scene.java:3881)
+at javafx.graphics@18/javafx.scene.Scene.processMouseEvent(Scene.java:1874)
+at javafx.graphics@18/javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2607)
+at javafx.graphics@18/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:411)
+at javafx.graphics@18/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:301)
+at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+at javafx.graphics@18/com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:450)
+at javafx.graphics@18/com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:424)
+at javafx.graphics@18/com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:449)
+at javafx.graphics@18/com.sun.glass.ui.View.handleMouseEvent(View.java:551)
+at javafx.graphics@18/com.sun.glass.ui.View.notifyMouse(View.java:937)
+at javafx.graphics@18/com.sun.glass.ui.gtk.GtkApplication._runLoop(Native Method)
+at javafx.graphics@18/com.sun.glass.ui.gtk.GtkApplication.lambda$runLoop$11(GtkApplication.java:316)
+at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading '<', no possible valid JSON value or punctuation could be recognized.
+at groovy.json.JsonLexer.nextToken(JsonLexer.java:86)
+at groovy.json.JsonLexer$nextToken.call(Unknown Source)
+at json.path@5.1.1/io.restassured.internal.path.json.ConfigurableJsonSlurper.parse(ConfigurableJsonSlurper.groovy:97)
+at io.restassured.internal.path.json.ConfigurableJsonSlurper$parse.callCurrent(Unknown Source)
+at json.path@5.1.1/io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.groovy:83)
+at json.path@5.1.1/io.restassured.path.json.JsonPath$4$1.method(JsonPath.java:965)
+at json.path@5.1.1/io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1000)
+... 82 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.restassured.path.json.exception.JsonPathException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAll -->
+        <test-method signature="testAll(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.example.demo3.TestAPI.CreateComment.CreateCommentAll@44dd3f92]" started-at="2022-07-10T08:21:00 ICT" name="testAll" data-provider="CreateCommentDataProvider" finished-at="2022-07-10T08:21:03 ICT" duration-ms="2705" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -47,20 +189,25 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[2]]>
+                <![CDATA[Y]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[1]]>
+                <![CDATA[Qua ghe gom]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[1000]]>
+                <![CDATA[1]]>
               </value>
             </param>
             <param index="4">
+              <value>
+                <![CDATA[1000]]>
+              </value>
+            </param>
+            <param index="5">
               <value>
                 <![CDATA[OK]]>
               </value>
@@ -69,7 +216,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAll -->
-        <test-method signature="testAll(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.example.demo3.TestAPI.GetListComment.GetListComment@6446f138]" started-at="2022-07-09T23:23:47 ICT" name="testAll" data-provider="GetListCommentDataProvider" finished-at="2022-07-09T23:23:49 ICT" duration-ms="1524" status="PASS">
+        <test-method signature="testAll(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.example.demo3.TestAPI.CreateComment.CreateCommentAll@44dd3f92]" started-at="2022-07-10T08:21:03 ICT" name="testAll" data-provider="CreateCommentDataProvider" finished-at="2022-07-10T08:21:06 ICT" duration-ms="2762" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -78,51 +225,61 @@
             </param>
             <param index="1">
               <value>
+                <![CDATA[Y]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Qua ghe gom]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[1000]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[OK]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAll -->
+        <test-method signature="testAll(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.example.demo3.TestAPI.CreateComment.CreateCommentAll@44dd3f92]" started-at="2022-07-10T08:21:06 ICT" name="testAll" data-provider="CreateCommentDataProvider" finished-at="2022-07-10T08:21:08 ICT" duration-ms="2616" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Y]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Qua ghe gom]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
                 <![CDATA[3]]>
               </value>
             </param>
-            <param index="2">
-              <value>
-                <![CDATA[2]]>
-              </value>
-            </param>
-            <param index="3">
+            <param index="4">
               <value>
                 <![CDATA[1000]]>
               </value>
             </param>
-            <param index="4">
-              <value>
-                <![CDATA[OK]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testAll -->
-        <test-method signature="testAll(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.example.demo3.TestAPI.GetListComment.GetListComment@6446f138]" started-at="2022-07-09T23:23:49 ICT" name="testAll" data-provider="GetListCommentDataProvider" finished-at="2022-07-09T23:23:50 ICT" duration-ms="1533" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[4]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[4]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[5]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[1000]]>
-              </value>
-            </param>
-            <param index="4">
+            <param index="5">
               <value>
                 <![CDATA[OK]]>
               </value>
@@ -138,7 +295,7 @@ at json.path@5.1.1/io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(Jso
 at json.path@5.1.1/io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:967)
 at json.path@5.1.1/io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1047)
 at json.path@5.1.1/io.restassured.path.json.JsonPath.get(JsonPath.java:202)
-at com.example.demo/com.example.demo3.TestAPI.GetListComment.GetListComment.testAll(GetListComment.java:31)
+at com.example.demo/com.example.demo3.TestAPI.CreateComment.CreateCommentAll.testAll(CreateCommentAll.java:39)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 at org.testng@7.6.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -162,7 +319,7 @@ at org.testng@7.6.0/org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
 at org.testng@7.6.0/org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
 at org.testng@7.6.0/org.testng.TestNG.runSuites(TestNG.java:1099)
 at org.testng@7.6.0/org.testng.TestNG.run(TestNG.java:1067)
-at com.example.demo/com.example.demo3.Controller.Controller.SelectAll(Controller.java:1142)
+at com.example.demo/com.example.demo3.Controller.Controller.SelectAll(Controller.java:1001)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 at com.sun.javafx.reflect.Trampoline.invoke(MethodUtil.java:77)
@@ -232,7 +389,7 @@ at json.path@5.1.1/io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(Jso
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAll -->
-        <test-method signature="testAll(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.example.demo3.TestAPI.GetListComment.GetListComment@6446f138]" started-at="2022-07-09T23:23:50 ICT" name="testAll" data-provider="GetListCommentDataProvider" finished-at="2022-07-09T23:23:52 ICT" duration-ms="1527" status="FAIL">
+        <test-method signature="testAll(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.example.demo3.TestAPI.CreateComment.CreateCommentAll@44dd3f92]" started-at="2022-07-10T08:21:08 ICT" name="testAll" data-provider="CreateCommentDataProvider" finished-at="2022-07-10T08:21:11 ICT" duration-ms="2652" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -241,20 +398,25 @@ at json.path@5.1.1/io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(Jso
             </param>
             <param index="1">
               <value>
-                <![CDATA[5]]>
+                <![CDATA[Y]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[8]]>
+                <![CDATA[Qua ghe gom]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[1000]]>
+                <![CDATA[4]]>
               </value>
             </param>
             <param index="4">
+              <value>
+                <![CDATA[1000]]>
+              </value>
+            </param>
+            <param index="5">
               <value>
                 <![CDATA[OK]]>
               </value>
@@ -270,7 +432,7 @@ at json.path@5.1.1/io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(Jso
 at json.path@5.1.1/io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:967)
 at json.path@5.1.1/io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1047)
 at json.path@5.1.1/io.restassured.path.json.JsonPath.get(JsonPath.java:202)
-at com.example.demo/com.example.demo3.TestAPI.GetListComment.GetListComment.testAll(GetListComment.java:31)
+at com.example.demo/com.example.demo3.TestAPI.CreateComment.CreateCommentAll.testAll(CreateCommentAll.java:39)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 at org.testng@7.6.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -294,7 +456,7 @@ at org.testng@7.6.0/org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
 at org.testng@7.6.0/org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
 at org.testng@7.6.0/org.testng.TestNG.runSuites(TestNG.java:1099)
 at org.testng@7.6.0/org.testng.TestNG.run(TestNG.java:1067)
-at com.example.demo/com.example.demo3.Controller.Controller.SelectAll(Controller.java:1142)
+at com.example.demo/com.example.demo3.Controller.Controller.SelectAll(Controller.java:1001)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 at com.sun.javafx.reflect.Trampoline.invoke(MethodUtil.java:77)
@@ -364,7 +526,7 @@ at json.path@5.1.1/io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(Jso
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAll -->
-        <test-method signature="testAll(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.example.demo3.TestAPI.GetListComment.GetListComment@6446f138]" started-at="2022-07-09T23:23:52 ICT" name="testAll" data-provider="GetListCommentDataProvider" finished-at="2022-07-09T23:23:54 ICT" duration-ms="1541" status="FAIL">
+        <test-method signature="testAll(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.example.demo3.TestAPI.CreateComment.CreateCommentAll@44dd3f92]" started-at="2022-07-10T08:21:11 ICT" name="testAll" data-provider="CreateCommentDataProvider" finished-at="2022-07-10T08:21:14 ICT" duration-ms="2779" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -373,20 +535,25 @@ at json.path@5.1.1/io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(Jso
             </param>
             <param index="1">
               <value>
-                <![CDATA[6]]>
+                <![CDATA[Y]]>
               </value>
             </param>
             <param index="2">
+              <value>
+                <![CDATA[Qua ghe gom]]>
+              </value>
+            </param>
+            <param index="3">
               <value>
                 <![CDATA[5]]>
               </value>
             </param>
-            <param index="3">
+            <param index="4">
               <value>
                 <![CDATA[1000]]>
               </value>
             </param>
-            <param index="4">
+            <param index="5">
               <value>
                 <![CDATA[OK]]>
               </value>
@@ -402,7 +569,7 @@ at json.path@5.1.1/io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(Jso
 at json.path@5.1.1/io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:967)
 at json.path@5.1.1/io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1047)
 at json.path@5.1.1/io.restassured.path.json.JsonPath.get(JsonPath.java:202)
-at com.example.demo/com.example.demo3.TestAPI.GetListComment.GetListComment.testAll(GetListComment.java:31)
+at com.example.demo/com.example.demo3.TestAPI.CreateComment.CreateCommentAll.testAll(CreateCommentAll.java:39)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 at org.testng@7.6.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -426,7 +593,7 @@ at org.testng@7.6.0/org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
 at org.testng@7.6.0/org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
 at org.testng@7.6.0/org.testng.TestNG.runSuites(TestNG.java:1099)
 at org.testng@7.6.0/org.testng.TestNG.run(TestNG.java:1067)
-at com.example.demo/com.example.demo3.Controller.Controller.SelectAll(Controller.java:1142)
+at com.example.demo/com.example.demo3.Controller.Controller.SelectAll(Controller.java:1001)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 at com.sun.javafx.reflect.Trampoline.invoke(MethodUtil.java:77)
@@ -496,7 +663,7 @@ at json.path@5.1.1/io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(Jso
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAll -->
-        <test-method signature="testAll(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.example.demo3.TestAPI.GetListComment.GetListComment@6446f138]" started-at="2022-07-09T23:23:54 ICT" name="testAll" data-provider="GetListCommentDataProvider" finished-at="2022-07-09T23:23:55 ICT" duration-ms="1540" status="PASS">
+        <test-method signature="testAll(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.example.demo3.TestAPI.CreateComment.CreateCommentAll@44dd3f92]" started-at="2022-07-10T08:21:14 ICT" name="testAll" data-provider="CreateCommentDataProvider" finished-at="2022-07-10T08:21:16 ICT" duration-ms="2678" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -505,20 +672,61 @@ at json.path@5.1.1/io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(Jso
             </param>
             <param index="1">
               <value>
+                <![CDATA[Y]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Qua ghe gom]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[6]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[1000]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[OK]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAll -->
+        <test-method signature="testAll(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.example.demo3.TestAPI.CreateComment.CreateCommentAll@44dd3f92]" started-at="2022-07-10T08:21:16 ICT" name="testAll" data-provider="CreateCommentDataProvider" finished-at="2022-07-10T08:21:19 ICT" duration-ms="2654" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[8]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Y]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Qua ghe gom]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
                 <![CDATA[7]]>
               </value>
             </param>
-            <param index="2">
-              <value>
-                <![CDATA[1]]>
-              </value>
-            </param>
-            <param index="3">
+            <param index="4">
               <value>
                 <![CDATA[1000]]>
               </value>
             </param>
-            <param index="4">
+            <param index="5">
               <value>
                 <![CDATA[OK]]>
               </value>
@@ -527,60 +735,34 @@ at json.path@5.1.1/io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(Jso
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAll -->
-        <test-method signature="testAll(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.example.demo3.TestAPI.GetListComment.GetListComment@6446f138]" started-at="2022-07-09T23:23:55 ICT" name="testAll" data-provider="GetListCommentDataProvider" finished-at="2022-07-09T23:23:57 ICT" duration-ms="1434" status="PASS">
+        <test-method signature="testAll(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.example.demo3.TestAPI.CreateComment.CreateCommentAll@44dd3f92]" started-at="2022-07-10T08:21:19 ICT" name="testAll" data-provider="CreateCommentDataProvider" finished-at="2022-07-10T08:21:22 ICT" duration-ms="2660" status="PASS">
           <params>
             <param index="0">
-              <value>
-                <![CDATA[8]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[8]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[100]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[1000]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[OK]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testAll -->
-        <test-method signature="testAll(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.example.demo3.TestAPI.GetListComment.GetListComment@6446f138]" started-at="2022-07-09T23:23:57 ICT" name="testAll" data-provider="GetListCommentDataProvider" finished-at="2022-07-09T23:23:58 ICT" duration-ms="1432" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[100]]>
-              </value>
-            </param>
-            <param index="1">
               <value>
                 <![CDATA[9]]>
               </value>
             </param>
+            <param index="1">
+              <value>
+                <![CDATA[Y]]>
+              </value>
+            </param>
             <param index="2">
               <value>
-                <![CDATA[9]]>
+                <![CDATA[Qua ghe gom]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[1000]]>
+                <![CDATA[8]]>
               </value>
             </param>
             <param index="4">
+              <value>
+                <![CDATA[1000]]>
+              </value>
+            </param>
+            <param index="5">
               <value>
                 <![CDATA[OK]]>
               </value>
@@ -589,139 +771,7 @@ at json.path@5.1.1/io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(Jso
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAll -->
-        <test-method signature="testAll(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.example.demo3.TestAPI.GetListComment.GetListComment@6446f138]" started-at="2022-07-09T23:23:58 ICT" name="testAll" data-provider="GetListCommentDataProvider" finished-at="2022-07-09T23:23:59 ICT" duration-ms="1524" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[100000]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[10]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[2]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[9998]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Không tìm thấy]]>
-              </value>
-            </param>
-          </params>
-          <exception class="io.restassured.path.json.exception.JsonPathException">
-            <message>
-              <![CDATA[Failed to parse the JSON document]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
-at json.path@5.1.1/io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1002)
-at json.path@5.1.1/io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:967)
-at json.path@5.1.1/io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1047)
-at json.path@5.1.1/io.restassured.path.json.JsonPath.get(JsonPath.java:202)
-at com.example.demo/com.example.demo3.TestAPI.GetListComment.GetListComment.testAll(GetListComment.java:31)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.testng@7.6.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng@7.6.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng@7.6.0/org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng@7.6.0/org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng@7.6.0/org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng@7.6.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng@7.6.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng@7.6.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng@7.6.0/org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng@7.6.0/org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng@7.6.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng@7.6.0/org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng@7.6.0/org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng@7.6.0/org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng@7.6.0/org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng@7.6.0/org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng@7.6.0/org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng@7.6.0/org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng@7.6.0/org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng@7.6.0/org.testng.TestNG.run(TestNG.java:1067)
-at com.example.demo/com.example.demo3.Controller.Controller.SelectAll(Controller.java:1142)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at com.sun.javafx.reflect.Trampoline.invoke(MethodUtil.java:77)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at javafx.base@18/com.sun.javafx.reflect.MethodUtil.invoke(MethodUtil.java:275)
-at javafx.fxml@18/com.sun.javafx.fxml.MethodHelper.invoke(MethodHelper.java:84)
-at javafx.fxml@18/javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1852)
-at javafx.fxml@18/javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1724)
-at javafx.base@18/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
-at javafx.base@18/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:234)
-at javafx.base@18/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
-at javafx.base@18/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
-at javafx.base@18/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
-at javafx.base@18/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
-at javafx.base@18/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
-at javafx.base@18/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
-at javafx.base@18/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
-at javafx.base@18/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
-at javafx.base@18/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
-at javafx.base@18/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
-at javafx.base@18/javafx.event.Event.fireEvent(Event.java:198)
-at javafx.graphics@18/javafx.scene.Node.fireEvent(Node.java:8797)
-at javafx.controls@18/javafx.scene.control.Button.fire(Button.java:203)
-at javafx.controls@18/com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:208)
-at javafx.controls@18/com.sun.javafx.scene.control.inputmap.InputMap.handle(InputMap.java:274)
-at javafx.base@18/com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:247)
-at javafx.base@18/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
-at javafx.base@18/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:234)
-at javafx.base@18/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
-at javafx.base@18/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
-at javafx.base@18/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
-at javafx.base@18/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
-at javafx.base@18/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
-at javafx.base@18/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
-at javafx.base@18/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
-at javafx.base@18/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
-at javafx.base@18/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
-at javafx.base@18/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
-at javafx.base@18/javafx.event.Event.fireEvent(Event.java:198)
-at javafx.graphics@18/javafx.scene.Scene$MouseHandler.process(Scene.java:3881)
-at javafx.graphics@18/javafx.scene.Scene.processMouseEvent(Scene.java:1874)
-at javafx.graphics@18/javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2607)
-at javafx.graphics@18/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:411)
-at javafx.graphics@18/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:301)
-at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
-at javafx.graphics@18/com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:450)
-at javafx.graphics@18/com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:424)
-at javafx.graphics@18/com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:449)
-at javafx.graphics@18/com.sun.glass.ui.View.handleMouseEvent(View.java:551)
-at javafx.graphics@18/com.sun.glass.ui.View.notifyMouse(View.java:937)
-at javafx.graphics@18/com.sun.glass.ui.gtk.GtkApplication._runLoop(Native Method)
-at javafx.graphics@18/com.sun.glass.ui.gtk.GtkApplication.lambda$runLoop$11(GtkApplication.java:316)
-at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading '<', no possible valid JSON value or punctuation could be recognized.
-at groovy.json.JsonLexer.nextToken(JsonLexer.java:86)
-at groovy.json.JsonLexer$nextToken.call(Unknown Source)
-at json.path@5.1.1/io.restassured.internal.path.json.ConfigurableJsonSlurper.parse(ConfigurableJsonSlurper.groovy:97)
-at io.restassured.internal.path.json.ConfigurableJsonSlurper$parse.callCurrent(Unknown Source)
-at json.path@5.1.1/io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.groovy:83)
-at json.path@5.1.1/io.restassured.path.json.JsonPath$4$1.method(JsonPath.java:965)
-at json.path@5.1.1/io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1000)
-... 82 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.restassured.path.json.exception.JsonPathException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testAll -->
-      </class> <!-- com.example.demo3.TestAPI.GetListComment.GetListComment -->
+      </class> <!-- com.example.demo3.TestAPI.CreateComment.CreateCommentAll -->
     </test> <!-- Command line test -->
   </suite> <!-- Command line suite -->
 </testng-results>

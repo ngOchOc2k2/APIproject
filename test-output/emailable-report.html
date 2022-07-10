@@ -9,18 +9,18 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Command line suite</th></tr>
-<tr><td><a href="#t0">Command line test</a></td><td class="num">6</td><td class="num">0</td><td class="num">0</td><td class="num attn">4</td><td class="num">15,112</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Command line test</a></td><td class="num">6</td><td class="num">0</td><td class="num">0</td><td class="num attn">4</td><td class="num">27,567</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Command line suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Command line test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="4">com.example.demo3.TestAPI.GetListComment.GetListComment</td><td><a href="#m0">testAll</a></td><td rowspan="4">1657383838463</td><td rowspan="4">1524</td></tr><tr class="failedeven"><td><a href="#m1">testAll</a></td></tr><tr class="failedeven"><td><a href="#m2">testAll</a></td></tr><tr class="failedeven"><td><a href="#m3">testAll</a></td></tr><tr><th colspan="4">Command line test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="6">com.example.demo3.TestAPI.GetListComment.GetListComment</td><td><a href="#m4">testAll</a></td><td rowspan="6">1657383837030</td><td rowspan="6">1432</td></tr><tr class="passedeven"><td><a href="#m5">testAll</a></td></tr><tr class="passedeven"><td><a href="#m6">testAll</a></td></tr><tr class="passedeven"><td><a href="#m7">testAll</a></td></tr><tr class="passedeven"><td><a href="#m8">testAll</a></td></tr><tr class="passedeven"><td><a href="#m9">testAll</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Command line suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Command line test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="4">com.example.demo3.TestAPI.CreateComment.CreateCommentAll</td><td><a href="#m0">testAll</a></td><td rowspan="4">1657416068645</td><td rowspan="4">2652</td></tr><tr class="failedeven"><td><a href="#m1">testAll</a></td></tr><tr class="failedeven"><td><a href="#m2">testAll</a></td></tr><tr class="failedeven"><td><a href="#m3">testAll</a></td></tr><tr><th colspan="4">Command line test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="6">com.example.demo3.TestAPI.CreateComment.CreateCommentAll</td><td><a href="#m4">testAll</a></td><td rowspan="6">1657416074077</td><td rowspan="6">2678</td></tr><tr class="passedeven"><td><a href="#m5">testAll</a></td></tr><tr class="passedeven"><td><a href="#m6">testAll</a></td></tr><tr class="passedeven"><td><a href="#m7">testAll</a></td></tr><tr class="passedeven"><td><a href="#m8">testAll</a></td></tr><tr class="passedeven"><td><a href="#m9">testAll</a></td></tr></tbody>
 </table>
-<h2>Command line test</h2><h3 id="m0">com.example.demo3.TestAPI.GetListComment.GetListComment#testAll</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>100000</td><td>10</td><td>2</td><td>9998</td><td>Không tìm thấy</td></tr><tr><th colspan="5">Exception</th></tr><tr><td colspan="5"><div class="stacktrace">io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
+<h2>Command line test</h2><h3 id="m0">com.example.demo3.TestAPI.CreateComment.CreateCommentAll#testAll</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th></tr><tr class="param stripe"><td>5</td><td>Y</td><td>Qua ghe gom</td><td>4</td><td>1000</td><td>OK</td></tr><tr><th colspan="6">Exception</th></tr><tr><td colspan="6"><div class="stacktrace">io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
 	at json.path@5.1.1/io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1002)
 	at json.path@5.1.1/io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:967)
 	at json.path@5.1.1/io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1047)
 	at json.path@5.1.1/io.restassured.path.json.JsonPath.get(JsonPath.java:202)
-	at com.example.demo/com.example.demo3.TestAPI.GetListComment.GetListComment.testAll(GetListComment.java:31)
+	at com.example.demo/com.example.demo3.TestAPI.CreateComment.CreateCommentAll.testAll(CreateCommentAll.java:39)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at com.example.demo/com.example.demo3.Controller.Controller.SelectAll(Controller.java:1142)
+	at com.example.demo/com.example.demo3.Controller.Controller.SelectAll(Controller.java:1001)
 	at javafx.fxml@18/com.sun.javafx.fxml.MethodHelper.invoke(MethodHelper.java:84)
 	at javafx.fxml@18/javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1852)
 	at javafx.fxml@18/javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1724)
@@ -79,14 +79,14 @@ Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while
 	at json.path@5.1.1/io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1000)
 	... 82 more
 ... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.example.demo3.TestAPI.GetListComment.GetListComment#testAll</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>6</td><td>6</td><td>5</td><td>1000</td><td>OK</td></tr><tr><th colspan="5">Exception</th></tr><tr><td colspan="5"><div class="stacktrace">io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
+<h3 id="m1">com.example.demo3.TestAPI.CreateComment.CreateCommentAll#testAll</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th></tr><tr class="param stripe"><td>1</td><td>N</td><td>Comment test</td><td>20</td><td>1004</td><td>Chưa đăng nhập</td></tr><tr><th colspan="6">Exception</th></tr><tr><td colspan="6"><div class="stacktrace">io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
 	at json.path@5.1.1/io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1002)
 	at json.path@5.1.1/io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:967)
 	at json.path@5.1.1/io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1047)
 	at json.path@5.1.1/io.restassured.path.json.JsonPath.get(JsonPath.java:202)
-	at com.example.demo/com.example.demo3.TestAPI.GetListComment.GetListComment.testAll(GetListComment.java:31)
+	at com.example.demo/com.example.demo3.TestAPI.CreateComment.CreateCommentAll.testAll(CreateCommentAll.java:39)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at com.example.demo/com.example.demo3.Controller.Controller.SelectAll(Controller.java:1142)
+	at com.example.demo/com.example.demo3.Controller.Controller.SelectAll(Controller.java:1001)
 	at javafx.fxml@18/com.sun.javafx.fxml.MethodHelper.invoke(MethodHelper.java:84)
 	at javafx.fxml@18/javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1852)
 	at javafx.fxml@18/javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1724)
@@ -145,14 +145,14 @@ Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while
 	at json.path@5.1.1/io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1000)
 	... 82 more
 ... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.example.demo3.TestAPI.GetListComment.GetListComment#testAll</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>5</td><td>5</td><td>8</td><td>1000</td><td>OK</td></tr><tr><th colspan="5">Exception</th></tr><tr><td colspan="5"><div class="stacktrace">io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
+<h3 id="m2">com.example.demo3.TestAPI.CreateComment.CreateCommentAll#testAll</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th></tr><tr class="param stripe"><td>6</td><td>Y</td><td>Qua ghe gom</td><td>5</td><td>1000</td><td>OK</td></tr><tr><th colspan="6">Exception</th></tr><tr><td colspan="6"><div class="stacktrace">io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
 	at json.path@5.1.1/io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1002)
 	at json.path@5.1.1/io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:967)
 	at json.path@5.1.1/io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1047)
 	at json.path@5.1.1/io.restassured.path.json.JsonPath.get(JsonPath.java:202)
-	at com.example.demo/com.example.demo3.TestAPI.GetListComment.GetListComment.testAll(GetListComment.java:31)
+	at com.example.demo/com.example.demo3.TestAPI.CreateComment.CreateCommentAll.testAll(CreateCommentAll.java:39)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at com.example.demo/com.example.demo3.Controller.Controller.SelectAll(Controller.java:1142)
+	at com.example.demo/com.example.demo3.Controller.Controller.SelectAll(Controller.java:1001)
 	at javafx.fxml@18/com.sun.javafx.fxml.MethodHelper.invoke(MethodHelper.java:84)
 	at javafx.fxml@18/javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1852)
 	at javafx.fxml@18/javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1724)
@@ -211,14 +211,14 @@ Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while
 	at json.path@5.1.1/io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1000)
 	... 82 more
 ... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.example.demo3.TestAPI.GetListComment.GetListComment#testAll</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>4</td><td>4</td><td>5</td><td>1000</td><td>OK</td></tr><tr><th colspan="5">Exception</th></tr><tr><td colspan="5"><div class="stacktrace">io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
+<h3 id="m3">com.example.demo3.TestAPI.CreateComment.CreateCommentAll#testAll</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th></tr><tr class="param stripe"><td>4</td><td>Y</td><td>Qua ghe gom</td><td>3</td><td>1000</td><td>OK</td></tr><tr><th colspan="6">Exception</th></tr><tr><td colspan="6"><div class="stacktrace">io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
 	at json.path@5.1.1/io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1002)
 	at json.path@5.1.1/io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:967)
 	at json.path@5.1.1/io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1047)
 	at json.path@5.1.1/io.restassured.path.json.JsonPath.get(JsonPath.java:202)
-	at com.example.demo/com.example.demo3.TestAPI.GetListComment.GetListComment.testAll(GetListComment.java:31)
+	at com.example.demo/com.example.demo3.TestAPI.CreateComment.CreateCommentAll.testAll(CreateCommentAll.java:39)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at com.example.demo/com.example.demo3.Controller.Controller.SelectAll(Controller.java:1142)
+	at com.example.demo/com.example.demo3.Controller.Controller.SelectAll(Controller.java:1001)
 	at javafx.fxml@18/com.sun.javafx.fxml.MethodHelper.invoke(MethodHelper.java:84)
 	at javafx.fxml@18/javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1852)
 	at javafx.fxml@18/javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1724)
@@ -277,11 +277,11 @@ Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while
 	at json.path@5.1.1/io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1000)
 	... 82 more
 ... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.example.demo3.TestAPI.GetListComment.GetListComment#testAll</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>100</td><td>9</td><td>9</td><td>1000</td><td>OK</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">com.example.demo3.TestAPI.GetListComment.GetListComment#testAll</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>2</td><td>2</td><td>1</td><td>1000</td><td>OK</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">com.example.demo3.TestAPI.GetListComment.GetListComment#testAll</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>8</td><td>8</td><td>100</td><td>1000</td><td>OK</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">com.example.demo3.TestAPI.GetListComment.GetListComment#testAll</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>3</td><td>3</td><td>2</td><td>1000</td><td>OK</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m8">com.example.demo3.TestAPI.GetListComment.GetListComment#testAll</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>1</td><td>1</td><td>5</td><td>1000</td><td>OK</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m9">com.example.demo3.TestAPI.GetListComment.GetListComment#testAll</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>7</td><td>7</td><td>1</td><td>1000</td><td>OK</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.example.demo3.TestAPI.CreateComment.CreateCommentAll#testAll</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th></tr><tr class="param stripe"><td>7</td><td>Y</td><td>Qua ghe gom</td><td>6</td><td>1000</td><td>OK</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.example.demo3.TestAPI.CreateComment.CreateCommentAll#testAll</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th></tr><tr class="param stripe"><td>1</td><td>Y</td><td>Qua ghe gom</td><td>20</td><td>1000</td><td>OK</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.example.demo3.TestAPI.CreateComment.CreateCommentAll#testAll</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th></tr><tr class="param stripe"><td>3</td><td>Y</td><td>Qua ghe gom</td><td>2</td><td>1000</td><td>OK</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.example.demo3.TestAPI.CreateComment.CreateCommentAll#testAll</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th></tr><tr class="param stripe"><td>9</td><td>Y</td><td>Qua ghe gom</td><td>8</td><td>1000</td><td>OK</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.example.demo3.TestAPI.CreateComment.CreateCommentAll#testAll</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th></tr><tr class="param stripe"><td>2</td><td>Y</td><td>Qua ghe gom</td><td>1</td><td>1000</td><td>OK</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.example.demo3.TestAPI.CreateComment.CreateCommentAll#testAll</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th></tr><tr class="param stripe"><td>8</td><td>Y</td><td>Qua ghe gom</td><td>7</td><td>1000</td><td>OK</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

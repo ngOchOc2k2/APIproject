@@ -11,7 +11,7 @@ import io.restassured.specification.RequestSpecification;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class readNotifications {
+public class 	readNotifications {
 	public static StringBuilder a = new StringBuilder();
 	@Test(dataProvider = "ReadNotificationsProvider", dataProviderClass =	ReadNotificationsData.class)
 	public void testAll(String auctionId,String code,String message) {

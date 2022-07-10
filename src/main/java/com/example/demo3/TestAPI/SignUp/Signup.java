@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
 
 import java.io.IOException;
 
-public class Signup {
+public class 	Signup {
 	public static StringBuilder a = new StringBuilder();
 
 	@Test(dataProvider = "SignupDataProvider", dataProviderClass = SignupData.class)

@@ -101,6 +101,99 @@ public class Controller implements Initializable {
     private Button sendAPI;
     @FXML
     private Button clsI;
+    @FXML
+    private Button TestAll;
+    @FXML
+    public void TestAllUnit(ActionEvent ignoredE) throws IOException{
+        TestNG teng1 = new TestNG();
+        TestNG teng2 = new TestNG();
+        TestNG teng3 = new TestNG();
+        TestNG teng4 = new TestNG();
+        TestNG teng5 = new TestNG();
+        TestNG teng6 = new TestNG();
+        TestNG teng7 = new TestNG();
+        TestNG teng8 = new TestNG();
+        TestNG teng9 = new TestNG();
+        TestNG teng10 = new TestNG();
+        TestNG teng11 = new TestNG();
+        TestNG teng12 = new TestNG();
+        TestNG teng13 = new TestNG();
+        TestNG teng14 = new TestNG();
+        TestNG teng15 = new TestNG();
+        TestNG teng16 = new TestNG();
+        TestNG teng17 = new TestNG();
+        TestNG teng18 = new TestNG();
+        TestNG teng19 = new TestNG();
+        TestNG teng20 = new TestNG();
+        TestNG teng21 = new TestNG();
+        TestNG teng22 = new TestNG();
+        TestNG teng23 = new TestNG();
+        TestNG teng24 = new TestNG();
+        TestNG teng25 = new TestNG();
+        TestNG teng26 = new TestNG();
+        TestNG teng27 = new TestNG();
+        TestNG teng28 = new TestNG();
+        TestNG teng29 = new TestNG();
+        TestNG teng30 = new TestNG();
+
+        TestNG[] teng = new TestNG[31];
+        teng1.setTestClasses( new Class[] { LoginTestAll.class });
+        teng1.run();
+        textoutput.appendText(gettextoutput.toString());
+        teng2.setTestClasses( new Class[] { LikeAuctionAll.class });
+        teng2.run();
+        teng3.setTestClasses( new Class[] { CreateAuctionAll.class });
+        teng3.run();
+        teng4.setTestClasses( new Class[] { AcceptMaxBidAll.class });
+        teng4.run();
+        teng5.setTestClasses( new Class[] { ContactUsAll.class });
+        teng5.run();
+        teng6.setTestClasses( new Class[] { CreateAuctionAll.class });
+        teng6.run();
+        teng7.setTestClasses( new Class[] { CreateCommentAll.class });
+        teng7.run();
+        teng8.setTestClasses( new Class[] { CreateItemAll.class });
+        teng8.run();
+        teng9.setTestClasses( new Class[] { EditAuction.class });
+        teng9.run();
+        teng10.setTestClasses( new Class[] { GetListAuctions.class });
+        teng10.run();
+        teng11.setTestClasses( new Class[] { GetListAuctionsByStatus.class });
+        teng11.run();
+        teng12.setTestClasses( new Class[] { GetListAuctionsByType.class });
+        teng12.run();
+        teng13.setTestClasses( new Class[] { GetListAuctionsByUser.class });
+        teng13.run();
+        teng14.setTestClasses( new Class[] { GetListBids.class });
+        teng14.run();
+        teng15.setTestClasses( new Class[] { GetListBrands.class });
+        teng15.run();
+        teng16.setTestClasses( new Class[] { GetListCategories.class });
+        teng16.run();
+        teng17.setTestClasses( new Class[] { GetListComment.class });
+        teng17.run();
+        teng18.setTestClasses( new Class[] { getNews.class });
+        teng18.run();
+        teng19.setTestClasses( new Class[] { getListLikes.class });
+        teng19.run();
+        teng20.setTestClasses( new Class[] { GetNotificationsData.class });
+        teng20.run();
+        teng21.setTestClasses( new Class[] { getTotalLikesOfAuction.class });
+        teng21.run();
+        teng22.setTestClasses( new Class[] { LikeAuctionAll.class });
+        teng22.run();
+        teng23.setTestClasses( new Class[] { LogoutTest.class });
+        teng23.run();
+        teng24.setTestClasses( new Class[] { readNewsAll.class });
+        teng24.run();
+        teng25.setTestClasses( new Class[] { readNotifications.class });
+        teng25.run();
+        teng26.setTestClasses( new Class[] { Signup.class });
+        teng26.run();
+        teng27.setTestClasses( new Class[] { Slider.class });
+        teng27.run();
+        textoutput.appendText(gettextoutput.toString());
+    }
 
     @FXML
     public void SelectLinkURL(ActionEvent ignoredE) throws IOException {

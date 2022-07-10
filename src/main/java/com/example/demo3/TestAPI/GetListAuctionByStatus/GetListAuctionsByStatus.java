@@ -15,16 +15,13 @@ public class GetListAuctionsByStatus {
 	public static StringBuilder a = new StringBuilder();
 	@Test(dataProvider = "GetListAuctionsByStatusDataProvider", dataProviderClass = GetListAuctionsByStatusData.class)
 	public static void testAll(String statusId, String index, String count, String code, String message) {
-		
 		RequestSpecification request = RestAssured.given();
 		request.baseUri(constant.GET_LIST_AUCTIONS_BY_STATUS);
-		
 		request.header("Content-Type","application/json");
 		JSONObject requestParams = new JSONObject();
 		requestParams.put("index", index);
 		requestParams.put("count", count);
 		request.body(requestParams.toJSONString());
-		
 		Response response = request.get("/"+statusId);
 		String x = response.prettyPrint();
 		a.append(x);
